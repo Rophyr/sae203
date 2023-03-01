@@ -16,26 +16,82 @@
 <table>
   <tr>
     <td class="column-1">
-      <img src="images/inconnu.png" alt="Your Image">
+      <img src="images/DALL·E 2023-03-01 16.23.48 - chinese looking woman, upper body.png" alt="Your Image">
     </td>
     <td class="column-2">
-      Text for row 1
+      Li Wei (China)
     </td>
   </tr>
   <tr>
     <td class="column-1">
-      <img src="images/inconnu.png" alt="Your Image">
+      <img src="images/DALL·E 2023-03-01 16.25.01 - man from mexico.png" alt="Your Image">
     </td>
     <td class="column-2">
-      Text for row 2
+      Juan Hernandez (Mexico)
     </td>
   </tr>
   <tr>
     <td class="column-1">
-      <img src="images/inconnu.png" alt="Your Image">
+      <img src="images/DALL·E 2023-03-01 16.25.30 - south korea woman, upper body.png" alt="Your Image">
     </td>
     <td class="column-2">
-      Text for row 3
+      Sophia Lee (South Korea)
+    </td>
+  </tr>
+  <tr>
+    <td class="column-1">
+      <img src="images/DALL·E 2023-03-01 16.27.46 - egyptian man, upper body, photo.png" alt="Your Image">
+    </td>
+    <td class="column-2">
+      Ahmed Khalil (Egypt)
+    </td>
+  </tr>
+  <tr>
+    <td class="column-1">
+      <img src="images/DALL·E 2023-03-01 16.28.38 - a man from brazil, upper body, photo.png" alt="Your Image">
+    </td>
+    <td class="column-2">
+      João Rodriguez (Brazil)
+    </td>
+  </tr>
+  <tr>
+    <td class="column-1">
+      <img src="images/DALL·E 2023-03-01 16.38.51 - a woman from japan, upper body, photo.png" alt="Your Image">
+    </td>
+    <td class="column-2">
+      Akira Tanaka (Japan)
+    </td>
+  </tr>
+  <tr>
+    <td class="column-1">
+      <img src="images/DALL·E 2023-03-01 16.30.02 - a woman from spain, upper body, photo.png" alt="Your Image">
+    </td>
+    <td class="column-2">
+      Ana Garcia (Spain)
+    </td>
+  </tr>
+  <tr>
+    <td class="column-1">
+      <img src="images/DALL·E 2023-03-01 16.30.33 - a man from south africa,upper body, photo.png" alt="Your Image">
+    </td>
+    <td class="column-2">
+      Felix Mbeki (South Africa)
+    </td>
+  </tr>
+  <tr>
+    <td class="column-1">
+      <img src="images/DALL·E 2023-03-01 16.40.04 - a man from france, upper body, photo(1).png" alt="Your Image">
+    </td>
+    <td class="column-2">
+      Antoine Dubois (France)
+    </td>
+  </tr>
+  <tr>
+    <td class="column-1">
+      <img src="images/DALL·E 2023-03-01 16.32.18 - a man from bangladesh, upper body, photo.png" alt="Your Image">
+    </td>
+    <td class="column-2">
+      Tariq Rahman (Bangladesh)
     </td>
   </tr>
 </table>

@@ -16,7 +16,7 @@
 </section>
 
 <section class="second">
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dignissimos aliquid, quo exercitationem, quas vel illo iusto deserunt possimus velit, inventore rerum a eligendi in. Eveniet quo neque nulla aspernatur?
+    
 </section>
 
 <?php include('footer.php'); ?>
