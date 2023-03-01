@@ -1,0 +1,160 @@
+body{
+    margin: 0;
+    background-image: url("https://wallpapers.com/images/hd/kyoto-fuji-san-view-dxo42w3pchmqmdrn.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121be;
+    color: #fff;
+    padding: 20px;
+}
+
+.home_logo {
+    position: relative;
+}
+  
+.home_logo img {
+    height: 50px;
+    z-index: 3;
+}
+    
+.home_logo a {
+    display: inline-block;
+    transition: 0.3s ease-in-out;
+}
+ 
+.home_logo a:hover {
+    opacity: 0.7;
+    transform: scale(1.1);
+}
+  
+nav ul {
+    list-style: none;
+    display: flex;
+}
+ 
+nav li {
+    margin-right: 20px;
+}
+  
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+ 
+nav a:hover {
+    color: #f00;
+}
+
+footer {
+    background-color: #212121be;
+    color: #fff;
+    padding: 5px 0;
+    font-size: 14px;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+    margin-top: 10%;
+}
+
+.footer_content {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer_links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.first{
+    height: 100vh;
+    width: 100%;
+    z-index: 2;
+}
+
+.first h1{
+    color: rgb(222, 47, 47);
+    font-family: 'Tilt Warp', cursive;
+    font-size: 80px;
+    font-weight: 300;
+    margin: 0;
+    padding: 10%;
+
+}
+
+.second{
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+}
+  
+td {
+    padding: 10px;
+    border: 3px solid #ccc;
+    background-color: rgba(0, 0, 0, 0.725);
+    color: white;
+}
+  
+td.column-1 {
+    width: 10%;
+}
+  
+td.column-2 {
+    width: 90%;
+}
+
+td > img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+}
+
+@media all and (orientation: portrait){
+    td > img {
+        max-width: 3rem;
+        height: auto;
+        display: block;
+        margin: auto;
+        border-radius: 50%;
+    }
+    
+    .first > h1{
+        font-size: 50px;
+    }
+}
+
+@media screen and (min-width: 1280px){
+    .first > h1{
+        width: 720px;
+    }
+}
