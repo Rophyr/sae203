@@ -19,7 +19,7 @@
       <img src="images/DALL·E 2023-03-01 16.23.48 - chinese looking woman, upper body.png" alt="Your Image">
     </td>
     <td class="column-2">
-      Li Wei (China)
+      Li Wei  &#x1F1E8;&#x1F1F3;
     </td>
   </tr>
   <tr>
@@ -27,7 +27,7 @@
       <img src="images/DALL·E 2023-03-01 16.25.01 - man from mexico.png" alt="Your Image">
     </td>
     <td class="column-2">
-      Juan Hernandez (Mexico)
+      Juan Hernandez  &#x1F1F2;&#x1F1FD;
     </td>
   </tr>
   <tr>
@@ -35,7 +35,7 @@
       <img src="images/DALL·E 2023-03-01 16.25.30 - south korea woman, upper body.png" alt="Your Image">
     </td>
     <td class="column-2">
-      Sophia Lee (South Korea)
+      Sophia Lee  &#x1F1F0;&#x1F1F7;
     </td>
   </tr>
   <tr>
@@ -43,7 +43,7 @@
       <img src="images/DALL·E 2023-03-01 16.27.46 - egyptian man, upper body, photo.png" alt="Your Image">
     </td>
     <td class="column-2">
-      Ahmed Khalil (Egypt)
+      Ahmed Khalil  &#x1F1EA;&#x1F1EC;
     </td>
   </tr>
   <tr>
@@ -51,7 +51,7 @@
       <img src="images/DALL·E 2023-03-01 16.28.38 - a man from brazil, upper body, photo.png" alt="Your Image">
     </td>
     <td class="column-2">
-      João Rodriguez (Brazil)
+      João Rodriguez  &#x1F1E7;&#x1F1F7;
     </td>
   </tr>
   <tr>
@@ -59,7 +59,7 @@
       <img src="images/DALL·E 2023-03-01 16.38.51 - a woman from japan, upper body, photo.png" alt="Your Image">
     </td>
     <td class="column-2">
-      Akira Tanaka (Japan)
+      Akira Tanaka  &#x1F1EF;&#x1F1F5;
     </td>
   </tr>
   <tr>
@@ -67,7 +67,7 @@
       <img src="images/DALL·E 2023-03-01 16.30.02 - a woman from spain, upper body, photo.png" alt="Your Image">
     </td>
     <td class="column-2">
-      Ana Garcia (Spain)
+      Ana Garcia   &#x1F1EA;&#x1F1F8;
     </td>
   </tr>
   <tr>
@@ -75,7 +75,7 @@
       <img src="images/DALL·E 2023-03-01 16.30.33 - a man from south africa,upper body, photo.png" alt="Your Image">
     </td>
     <td class="column-2">
-      Felix Mbeki (South Africa)
+      Felix Mbeki  &#x1F1FF;&#x1F1E6;
     </td>
   </tr>
   <tr>
@@ -83,7 +83,7 @@
       <img src="images/DALL·E 2023-03-01 16.40.04 - a man from france, upper body, photo(1).png" alt="Your Image">
     </td>
     <td class="column-2">
-      Antoine Dubois (France)
+      Antoine Dubois  &#x1F1EB;&#x1F1F7;
     </td>
   </tr>
   <tr>
@@ -91,7 +91,7 @@
       <img src="images/DALL·E 2023-03-01 16.32.18 - a man from bangladesh, upper body, photo.png" alt="Your Image">
     </td>
     <td class="column-2">
-      Tariq Rahman (Bangladesh)
+      Tariq Rahman  &#x1F1E7;&#x1F1E9;
     </td>
   </tr>
 </table>

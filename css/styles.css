@@ -115,6 +115,7 @@ td.column-1{
 }
 td.column-2{
     width: 90%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 td > img{
     max-width: 100%;
