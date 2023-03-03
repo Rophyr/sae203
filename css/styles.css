@@ -105,8 +105,8 @@ footer{
   width: 45%;
   height: 40rem;
   margin: 3vh;
-  background-color: #4a4a4abe;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: #4a4a4a51;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.15);
   float: left;
   overflow: hidden;
   border-radius: 0.5rem;
