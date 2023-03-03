@@ -14,88 +14,98 @@
 
 <section class="first">
 <div class="container">
-<table>
-  <tr>
-    <td class="column-1">
-      <img src="images/DALL·E 2023-03-01 16.23.48 - chinese looking woman, upper body.png" alt="Your Image">
-    </td>
-    <td class="column-2">
-      Li Wei  &#x1F1E8;&#x1F1F3;
-    </td>
-  </tr>
-  <tr>
-    <td class="column-1">
-      <img src="images/DALL·E 2023-03-01 16.25.01 - man from mexico.png" alt="Your Image">
-    </td>
-    <td class="column-2">
-      Juan Hernandez  &#x1F1F2;&#x1F1FD;
-    </td>
-  </tr>
-  <tr>
-    <td class="column-1">
-      <img src="images/DALL·E 2023-03-01 16.25.30 - south korea woman, upper body.png" alt="Your Image">
-    </td>
-    <td class="column-2">
-      Sophia Lee  &#x1F1F0;&#x1F1F7;
-    </td>
-  </tr>
-  <tr>
-    <td class="column-1">
-      <img src="images/DALL·E 2023-03-01 16.27.46 - egyptian man, upper body, photo.png" alt="Your Image">
-    </td>
-    <td class="column-2">
-      Ahmed Khalil  &#x1F1EA;&#x1F1EC;
-    </td>
-  </tr>
-  <tr>
-    <td class="column-1">
-      <img src="images/DALL·E 2023-03-01 16.28.38 - a man from brazil, upper body, photo.png" alt="Your Image">
-    </td>
-    <td class="column-2">
-      João Rodriguez  &#x1F1E7;&#x1F1F7;
-    </td>
-  </tr>
-  <tr>
-    <td class="column-1">
-      <img src="images/DALL·E 2023-03-01 16.38.51 - a woman from japan, upper body, photo.png" alt="Your Image">
-    </td>
-    <td class="column-2">
-      Akira Tanaka  &#x1F1EF;&#x1F1F5;
-    </td>
-  </tr>
-  <tr>
-    <td class="column-1">
-      <img src="images/DALL·E 2023-03-01 16.30.02 - a woman from spain, upper body, photo.png" alt="Your Image">
-    </td>
-    <td class="column-2">
-      Ana Garcia   &#x1F1EA;&#x1F1F8;
-    </td>
-  </tr>
-  <tr>
-    <td class="column-1">
-      <img src="images/DALL·E 2023-03-01 16.30.33 - a man from south africa,upper body, photo.png" alt="Your Image">
-    </td>
-    <td class="column-2">
-      Felix Mbeki  &#x1F1FF;&#x1F1E6;
-    </td>
-  </tr>
-  <tr>
-    <td class="column-1">
-      <img src="images/DALL·E 2023-03-01 16.40.04 - a man from france, upper body, photo(1).png" alt="Your Image">
-    </td>
-    <td class="column-2">
-      Antoine Dubois  &#x1F1EB;&#x1F1F7;
-    </td>
-  </tr>
-  <tr>
-    <td class="column-1">
-      <img src="images/DALL·E 2023-03-01 16.32.18 - a man from bangladesh, upper body, photo.png" alt="Your Image">
-    </td>
-    <td class="column-2">
-      Tariq Rahman  &#x1F1E7;&#x1F1E9;
-    </td>
-  </tr>
-</table>
+  <ul>
+    <li class="guide">
+      <figure>
+        <img src="images/DALL·E 2023-03-01 16.23.48 - chinese looking woman, upper body.png" alt="Chinese looking woman">
+      </figure>
+      <div class="info">
+        <p class="pays">Chine</p>
+        <h1>Li Wei</h1> 
+      </div>
+    </li>
+    <li class="guide">
+      <figure>
+        <img src="images/DALL·E 2023-03-01 16.25.01 - man from mexico.png" alt="Man from Mexico">
+      </figure>
+      <div class="info">
+        <p class="pays">Mexique</p>
+        <h1>Juan Hernandez</h1> 
+      </div>
+    </li>
+    <li class="guide">
+      <figure>
+        <img src="images/DALL·E 2023-03-01 16.25.30 - south korea woman, upper body.png" alt="Girl from Korea">
+      </figure>
+      <div class="info">
+        <p class="pays">Corée du Sud</p>
+        <h1>Sophia Lee</h1> 
+      </div>
+    </li>
+    <li class="guide">
+      <figure>
+        <img src="images/DALL·E 2023-03-01 16.27.46 - egyptian man, upper body, photo.png" alt="Man from Egypt">
+      </figure>
+      <div class="info">
+        <p class="pays">Egypte</p>
+        <h1>Ahmed Khalil</h1> 
+      </div>
+    </li>
+    <li class="guide">
+      <figure>
+        <img src="images/DALL·E 2023-03-01 16.28.38 - a man from brazil, upper body, photo.png" alt="Man from Brazil">
+      </figure>
+      <div class="info">
+        <p class="pays">Brésil</p>
+        <h1>João Rodriguez</h1> 
+      </div>
+    </li>
+    <li class="guide">
+      <figure>
+        <img src="images/DALL·E 2023-03-01 16.38.51 - a woman from japan, upper body, photo.png" alt="Woman from Japan">
+      </figure>
+      <div class="info">
+        <p class="pays">Japon</p>
+        <h1>Akira Tanaka</h1> 
+      </div>
+    </li>
+    <li class="guide">
+      <figure>
+        <img src="images/DALL·E 2023-03-01 16.30.02 - a woman from spain, upper body, photo.png" alt="Woman from Spain">
+      </figure>
+      <div class="info">
+        <p class="pays">Espagne</p>
+        <h1>Ana Garcia</h1> 
+      </div>
+    </li>
+    <li class="guide">
+      <figure>
+        <img src="images/DALL·E 2023-03-01 16.30.33 - a man from south africa,upper body, photo.png" alt="Man from South Africa">
+      </figure>
+      <div class="info">
+        <p class="pays">Afrique du Sud</p>
+        <h1>Felix Mbeki</h1> 
+      </div>
+    </li>
+    <li class="guide">
+      <figure>
+        <img src="images/DALL·E 2023-03-01 16.40.04 - a man from france, upper body, photo(1).png" alt="Man from France">
+      </figure>
+      <div class="info">
+        <p class="pays">France</p>
+        <h1>Antoine Dubois</h1> 
+      </div>
+    </li>
+    <li class="guide">
+      <figure>
+        <img src="images/DALL·E 2023-03-01 16.32.18 - a man from bangladesh, upper body, photo.png" alt="Man from Bangladesh">
+      </figure>
+      <div class="info">
+        <p class="pays">Bangladesh</p>
+        <h1>Tariq Rahman</h1> 
+      </div>
+    </li>
+  </ul>
 </div>
 
 </section>

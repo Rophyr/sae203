@@ -92,35 +92,104 @@ footer{
 .second {
     height: 100vh;
 }
-.container{
+.container {
+  list-style: none;
+  height: auto;
+  padding: 1rem;
+  margin: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.guide {
+  width: 45%;
+  height: 40rem;
+  margin: 3vh;
+  background-color: #4a4a4abe;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  float: left;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.guide:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.guide img {
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+  
+
+.guide .info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 30%;
+}
+
+.guide .pays {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 0.5rem;
+  font-family: 'Tilt Warp', cursive;
+}
+
+.guide h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0;
+  font-family: 'Tilt Warp', cursive;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.title_rech{
     display: flex;
     justify-content: center;
-    margin-top: 7rem;
+    font-family: 'Tilt Warp', cursive;
 }
-table{
-    width: 80%;
-    border-collapse: collapse;
+#pays{
+    margin: 1rem;
 }
-td{
-    padding: 10px;
-    border: 3px solid #ccc;
-    background-color: rgba(0, 0, 0, 0.725);
-    color: white;
+label{
+    margin: 1rem;
 }
-td.column-1{
-    width: 10%;
+button{
+    height: 1.5rem;
+    margin: 1rem;
 }
-td.column-2{
+form{
+    display: flex;
+    justify-content: center;
+}
+
+.centre{
+    display: flex;
+    justify-content: center;
+}
+.blanc{
+    text-transform: capitalize;
+    font-size: 50px;
+}
+
+@media (max-width: 768px) {
+  .guide {
     width: 90%;
-    font-family: Arial, Helvetica, sans-serif;
+  }
 }
-td > img{
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: auto;
-    border-radius: 50%;
-}
+
+
 @media all and (orientation: portrait) {
     td > img  {
         max-width: 3rem;
