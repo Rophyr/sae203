@@ -133,8 +133,13 @@ td > img{
         border-radius: 50%;
     }
     .first > h1 {
-        font-size: 50px;
+        margin-top: 25rem;
+        font-size: 100px;
     }
+    body {
+        background-position: -800px center;
+        background-size: 400%;
+      }
 }
 @media screen and (min-width: 1280px) {
     .first > h1 {
