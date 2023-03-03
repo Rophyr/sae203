@@ -7,7 +7,7 @@
     <nav>
       <ul>
         <li><a href="listing.php">Listing</a></li>
-        <li><a href="#">Recherche</a></li>
+        <li><a href="form_recherche.php">Recherche</a></li>
         <li><a href="#">Admin</a></li>
       </ul>
     </nav>
