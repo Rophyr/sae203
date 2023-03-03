@@ -15,10 +15,7 @@ header  {
     align-items: center;
     background-color: #212121be;
     color: #fff;
-    padding: 15px;
-}
-.home_logo  {
-    position: relative;
+    padding: 5px;
 }
 .home_logo img  {
     height: 50px;
@@ -139,7 +136,16 @@ td > img{
     body {
         background-position: -800px center;
         background-size: 400%;
-      }
+    }
+    header{
+        padding: 10px;
+    }
+    nav a{
+        font-size: 200%;
+    }
+    .footer_links{
+        font-size: 20px;
+    }
 }
 @media screen and (min-width: 1280px) {
     .first > h1 {
