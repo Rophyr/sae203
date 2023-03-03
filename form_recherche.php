@@ -5,7 +5,7 @@
 </head>
 <body>
 	<h1>Recherche de guides</h1>
-	<form method="get" action="listing.php">
+	<form method="get" action="reponse_recherche.php">
 		<label for="pays">Pays :</label>
 		<input type="text" id="pays" name="pays" required>
 		<br><br>
