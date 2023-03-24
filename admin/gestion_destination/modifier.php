@@ -4,7 +4,7 @@
 	<title></title>
 </head>
 <body>
-<a href="../gestion_index.php">retour</a> 	
+<a href="gestion_dest.php">retour</a> 	
 	<hr>
 <h1>gestion des guides</h1>
 <p>modification d'un guide</p>
@@ -14,14 +14,14 @@
     $mabd->query('SET NAMES utf8;');
     $req = 'SELECT * FROM  destinations WHERE dest_id = ' . $num;
     $resultat = $mabd->query($req);
-    $album = $resultat->fetch();
+    $destinations = $resultat->fetch();
  ?>
 <hr>
 <form method="POST" action="valid_modif.php" enctype="multipart/form-data">
-    <input type="hidden" name="num"  value="<?php echo $album['dest_id']; ?>">
-    Ville:<input type="text" name="ville" value="<?php echo $album['dest_nom'] ?>" ><br>
-    <br>
-    Pays:<select name="pays">
+    <input type="hidden" name="num"  value="<?php echo $destinations['dest_id']; ?>">
+    Ville:<input type="text" name="ville" value="<?php echo $destinations['dest_nom'] ?>" ><br>
+    Pays:
+    <select name="pays">
     	<?php
 			$mabd = new PDO('mysql:host=localhost;dbname=sae203base;charset=UTF8;', 'root', 'root');
             $mabd->query('SET NAMES utf8;');
@@ -36,11 +36,11 @@
         }
          ?>
     </select>
-    <br><br>
-    Budget:<input type="text" name="budget" value="<?php echo $album['dest_budget'] ?>" ><br><br>
-    Note:<input type="text" name="note" value="<?php echo $album['dest_note'] ?>" ><br><br>
-    Date:<input type="text" name="date" value="<?php echo $album['dest_date'] ?>" ><br><br>
-    photo:<input type="file" name="photo" /><br /><br>
+    <br>
+    Budget:<input type="text" name="budget" value="<?php echo $destinations['dest_budget'] ?>" ><br>
+    Note:<input type="text" name="note" value="<?php echo $destinations['dest_note'] ?>" ><br>
+    Fuseau horaire:<input type="text" name="horaire" value="<?php echo $destinations['dest_fus_hor'] ?>" ><br>
+    photo:<input type="file" name="photo" /><br />
     <input type="submit" name="ajouter">
 </form>
 

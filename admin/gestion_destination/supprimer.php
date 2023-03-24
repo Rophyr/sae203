@@ -2,7 +2,7 @@
 <html>
 <head><title></title></head>
 <body>
-<a href="gestion_index.php">Retour</a> 	
+<a href="gestion_dest.php">Retour</a> 	
 <hr> <h1>gestion des guides</h1> <hr>
 
 <?php

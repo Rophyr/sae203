@@ -4,7 +4,7 @@
 	<title></title>
 </head>
 <body>
-	<a href="gestion_index.php">Retour</a> 	
+	<a href="gestion_dest.php">Retour</a> 	
 	<hr>
 	<h1>gestion des guides</h1>
 	<p>Modification d'un guide reussi !</p>
@@ -14,9 +14,8 @@
     $ville=$_POST['ville'];
     $pays=$_POST['pays'];
     $budget=$_POST['budget'];
-    $note=$_POST['note'];
-    $note=$_POST['date'];
-    $num =$_POST['num'];
+    $pays=$_POST['pays'];
+    $num=$_POST['num'];
 
     $mabd = new PDO('mysql:host=localhost;dbname=sae203base;charset=UTF8;', 'root', 'root');
     $mabd->query('SET NAMES utf8;');
@@ -42,11 +41,11 @@
             die();
         }
 
-        $req = 'UPDATE destinations SET dest_nom="'.$ville.'", dest_pays="'.$pays.'", guide_budget='.$budget.', dest_pays=(SELECT dest_pays FROM destinations WHERE dest_id="'.$nation.'"), dest_photo="'.$nouvelleImage.'" WHERE dest_id='.$num;
+        $req = 'UPDATE destinations SET dest_nom="'.$ville.'", dest_pays="'.$pays.'", dest_budget="'.$budget.'", dest_pays=(SELECT nation_nom FROM nation WHERE nation_id="'.$pays.'"), dest_photo="'.$nouvelleImage.'" WHERE dest_id='.$num;
 
     }
     else{
-        $req = 'UPDATE destinations SET dest_nom="'.$ville.'", dest_pays="'.$pays.'", guide_budget='.$budget.', dest_pays=(SELECT dest_pays FROM destinations WHERE dest_id="'.$nation.'") WHERE dest_id='.$num;
+        $req = 'UPDATE destinations SET dest_nom="'.$ville.'", dest_pays="'.$pays.'", dest_budget="'.$budget.'", dest_pays=(SELECT nation_nom FROM nation WHERE nation_id="'.$pays.'") WHERE dest_id='.$num;
     }
     echo 'juste pour le debug: '.$req;
     $resultat = $mabd->query($req);

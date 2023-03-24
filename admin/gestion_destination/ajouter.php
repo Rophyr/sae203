@@ -4,7 +4,7 @@
 	<title></title>
 </head>
 <body>
-<a href="gestion_index.php">retour</a> 	
+<a href="gestion_dest.php">retour</a> 	
 	<hr>
 <h1>gestion des guides</h1>
 <p>Ajouter un guide</p>
