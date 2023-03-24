@@ -1,7 +1,7 @@
 <header>
     <div class="home_logo">
         <a href="./index.php">
-            <img src="images/home.png" alt="Home">
+            <img src="images/house.png" alt="Home">
         </a>
     </div>
     <nav>
