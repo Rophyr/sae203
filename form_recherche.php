@@ -15,19 +15,15 @@
 <?php include('header.php'); ?>
 
 <main id="form">
-    <div id="rehcerche">
+    <div id="recherche">
         <form action="reponse_recherche.php" method="post">
-            <h1>RECHERCHE</h1>
-    
-                <label for="search"></label>
-                <input type="search" name="search" id="search" />
-                <input id="submit" type="submit" value="Rechercher" />
-
-            <?php
-                if (isset($_GET['erreur'])) {
-                    echo '<span>Aucune information trouvÃ©e</span>';
-                }
-            ?>
+            <p>
+                <label for="region">Recherche</label>
+                <input type="text" name="region" id="region">
+            </p>
+            <p>
+                <input type="submit" value="Valider">
+            </p>
         </form>
     </div>
 </main>

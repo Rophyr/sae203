@@ -1,12 +1,9 @@
 <?php
-    if ( (empty($_POST['search'])) ) {
+    if ( (empty($_POST['region']))) {
         header('Location: form_recherche.php');
     }
-    $search = $_POST['search'];
-    if($search==null) {
-        header('Location: form_recherche.php?erreur=1');
-    }
-    $search_nettoye =  filter_var( $search , FILTER_SANITIZE_STRING );
+$region = $_POST['region'];
+$region_nettoye =  filter_var( $region ,  FILTER_SANITIZE_SPECIAL_CHARS );
 ?>
 
 <!DOCTYPE html>
@@ -24,34 +21,39 @@
 
 <?php  require 'header.php'; ?>
 
-<h1 class="centre">Resultat de la Recherche : </h1>
+<main>
 
 <?php
-   echo '<p class="centre blanc">'.$search_nettoye.'</p>'."\n";
+$mabd = new PDO('mysql:host=localhost;dbname=sae203Base;charset=UTF8;', 'mmi22c11', 'L8Fi8>(2N_xi');
+$mabd->query('SET NAMES utf8;');
+
+
+if (isset($_POST['region'])) {
+    
+    $req = "SELECT * FROM destinations INNER JOIN guide ON destinations._guides_id = destinations.guides_id WHERE LOWER(dest_pays) LIKE LOWER('%" . $dest_nettoye . "%') OR LOWER(dest_nom) LIKE LOWER('%" . $dest_nettoye . "%')";
+    $resultat = $mabd->query($req);
+    
+    echo '<h1>Résultats pour ' . htmlspecialchars($dest_nettoye) . '</h1>';
+
+    foreach ($resultat as $value) {
+
+        echo '<p> <img src="' . $value['guide_photo'] . '" alt="' . $value['dest_pays'] . '"> </p>';
+        echo '<div>' ;
+        echo '<h3>'.$value['dest_pays'] .'</h3>';
+        echo '<p>Ville :'. $value['dest_nom'] .'</p>';
+        echo '<p>Guide Prenom:'. $value['guide_prenom'] .'</p>';
+        echo '<p>Guide Nom :'. $value['guide_nom'] .'</p>';
+        echo '<p>Budget :'. $value['dest_budget'] .'%</p>';
+        
+    }
+}
 ?>
+
+    </main>
 
 <section class="first">
 <div class="container">
-  <ul>
-  <li class="guide">
-      <figure>
-        <img src="images/DALL·E 2023-03-01 16.40.04 - a man from france, upper body, photo(1).png" alt="Man from France">
-      </figure>
-      <div class="info">
-        <p class="pays">France</p>
-        <h1>Antoine Dubois</h1> 
-      </div>
-    </li>
-    <li class="guide">
-      <figure>
-        <img src="images/DALL·E 2023-03-01 16.32.18 - a man from bangladesh, upper body, photo.png" alt="Man from Bangladesh">
-      </figure>
-      <div class="info">
-        <p class="pays">Bangladesh</p>
-        <h1>Tariq Rahman</h1> 
-      </div>
-    </li>
-  </ul>
+
 </div>
 
 <?php  require 'footer.php'; ?>

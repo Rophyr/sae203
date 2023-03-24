@@ -6,8 +6,8 @@
 <body>
 <a href="table1_gestion.php">Retour</a>	
 	<hr>
-<h1>gestion des guides</h1>
-<h2>vous venez d'ajouter un guide</h2>
+<h1>gestion des destinations</h1>
+<h2>vous venez d'ajouter une destination</h2>
 <hr>
 <table>
 <tbody>
