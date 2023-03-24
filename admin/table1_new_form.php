@@ -16,20 +16,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $budget = $_POST['budget'];
     $note = $_POST['note'];
     $horaire = $_POST['horaire'];
-    $date = $_POST['date'];
     
     $mabd = new PDO('mysql:host=localhost;dbname=sae203base;charset=UTF8;', 'mmi22c11', 'L8Fi8>(2N_xi');
     $mabd->query('SET NAMES utf8;');
 
-    $req = $mabd->prepare('INSERT INTO destinations(dest_nom, dest_pays, dest_budget, dest_note, dest_fus_hor, dest_date) 
-                           VALUES(:ville, :pays, :budget, :note, :horaire, :"date")');
+    $req = $mabd->prepare('INSERT INTO destinations(dest_nom, dest_pays, dest_budget, dest_note, dest_fus_hor) 
+                           VALUES(:ville, :pays, :budget, :note, :horaire)');
     $req->execute(array(
         'ville' => $ville,
         'pays' => $pays,
         'budget' => $budget,
         'note' => $note,
         'horaire' => $horaire
-        'date' => $date,
     ));
     
     // Redirect to a confirmation page
