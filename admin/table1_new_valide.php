@@ -4,7 +4,7 @@
 	<title></title>
 </head>
 <body>
-<a href="gestion_index.php">Retour</a> 	
+<a href="table1_gestion.php">Retour</a>	
 	<hr>
 <h1>gestion des guides</h1>
 <h2>vous venez d'ajouter un guide</h2>

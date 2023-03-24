@@ -4,10 +4,10 @@
 	<title></title>
 </head>
 <body>
-<a href="gestion_dest.php">Retour</a> 	
+<a href="table2_gestion.php">Retour</a> 	
 	<hr>
-<h1>gestion des guides</h1>
-<h2>vous venez d'ajouter un guide</h2>
+<h1>Gestion des guides</h1>
+<h2>Vous venez d'ajouter un guide</h2>
 <hr>
 <table>
 <tbody>

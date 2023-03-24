@@ -4,12 +4,11 @@
 	<title></title>
 </head>
 <body>
-<a href="../gestion_index.php">Retour</a> 	
+<a href="admin.php">Retour</a> 	
 	<hr>
-<h1>gestion des guides</h1>
-<p>pensez a proteger le dossier admin avec un htaccess :-)</p>
+<h1>Gestion des guides</h1>
 <hr>
-<a href="ajouter.php">ajouter un guide</a>
+<a href="table2_new_form.php">ajouter un guide</a>
 <table border=1>
 	<thead>
 		<tr><td>nom</td><td>prenom</td><td>age</td><td>nationnalité</td><td>supprimer</td><td>modifier</td></tr>
@@ -27,8 +26,8 @@ foreach ($resultat as $value) {
     echo '<td>' . $value['guide_prenom'] . '</td>';
     echo '<td>' . $value['guide_age'] . '</td>';
     echo '<td>' . $value['guide_nation'] . '</td>';
-    echo '<td> <a href="supprimer.php?num=' .$value['guide_id'].' " > Supprimer </a> </td>';
-    echo '<td> <a href="modifier.php?num='.$value['guide_id'].' " > Modifier </a> </td>';
+    echo '<td> <a href="table2_delete.php?num=' .$value['guide_id'].' " > Supprimer </a> </td>';
+    echo '<td> <a href="table2_modif.php?num='.$value['guide_id'].' " > Modifier </a> </td>';
 
     echo '</tr>';
 }

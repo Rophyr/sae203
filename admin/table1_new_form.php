@@ -4,12 +4,12 @@
 	<title></title>
 </head>
 <body>
-<a href="gestion_dest.php">retour</a> 	
+<a href="table1_gestion.php">Retour</a>
 	<hr>
 <h1>gestion des guides</h1>
 <p>Ajouter un guide</p>
 <hr>
-<form method="POST" action="valid_ajout.php" enctype="multipart/form-data">
+<form method="POST" action="table1_new_valide.php" enctype="multipart/form-data">
     <label>Nom:</label>
     <input type="text" name="nom" required><br>
     <label>Prenom:</label>
@@ -21,7 +21,7 @@
     <label>Pays de résidence:</label>
     <select name="nation">
     	<?php
-			$mabd = new PDO('mysql:host=localhost;dbname=sae203base;charset=UTF8;', 'mmi22c11', 'L8Fi8>(2N_xi');
+            $mabd = new PDO('mysql:host=localhost;dbname=sae203base;charset=UTF8;', 'mmi22c11', 'L8Fi8>(2N_xi');
             $mabd->query('SET NAMES utf8;');
             $req = "SELECT * FROM  nation ";
             $resultat = $mabd->query($req);

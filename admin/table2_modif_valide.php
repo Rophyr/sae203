@@ -4,9 +4,9 @@
 	<title></title>
 </head>
 <body>
-	<a href="gestion_index.php">Retour</a> 	
+	<a href="table2_gestion.php">Retour</a> 	
 	<hr>
-	<h1>gestion des guides</h1>
+	<h1>Gestion des guides</h1>
 	<p>Modification d'un guide reussi !</p>
 	<hr>
 

@@ -4,26 +4,26 @@
 	<title></title>
 </head>
 <body>
-<a href="gestion_dest.php">retour</a> 	
+<a href="table1_gestion.php">Retour</a>
 	<hr>
-<h1>gestion des guides</h1>
-<p>modification d'un guide</p>
+<h1>Gestion des guides</h1>
+<p>Modification d'un guide</p>
 <?php
 	$num = $_GET['num'];
-    $mabd = new PDO('mysql:host=localhost;dbname=sae203base;charset=UTF8;', 'mmi22c11', 'L8Fi8>(2N_xi');
+    $mabd = new PDO('mysql:host=localhost;dbname=sae203base;charset=UTF8;', 'root', 'root');
     $mabd->query('SET NAMES utf8;');
     $req = 'SELECT * FROM  destinations WHERE dest_id = ' . $num;
     $resultat = $mabd->query($req);
     $destinations = $resultat->fetch();
  ?>
 <hr>
-<form method="POST" action="valid_modif.php" enctype="multipart/form-data">
+<form method="POST" action="table1_modif_valide.php" enctype="multipart/form-data">
     <input type="hidden" name="num"  value="<?php echo $destinations['dest_id']; ?>">
     Ville:<input type="text" name="ville" value="<?php echo $destinations['dest_nom'] ?>" ><br>
     Pays:
     <select name="pays">
     	<?php
-			$mabd = new PDO('mysql:host=localhost;dbname=sae203base;charset=UTF8;', 'mmi22c11', 'L8Fi8>(2N_xi');
+            $mabd = new PDO('mysql:host=localhost;dbname=sae203base;charset=UTF8;', 'mmi22c11', 'L8Fi8>(2N_xi');
             $mabd->query('SET NAMES utf8;');
             $req = "SELECT * FROM  nation ";
             $resultat = $mabd->query($req);
