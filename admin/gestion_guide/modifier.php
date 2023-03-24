@@ -10,7 +10,7 @@
 <p>modification d'un guide</p>
 <?php
 	$num = $_GET['num'];
-    $mabd = new PDO('mysql:host=localhost;dbname=sae203base;charset=UTF8;', 'root', 'root');
+    $mabd = new PDO('mysql:host=localhost;dbname=sae203base;charset=UTF8;', 'mmi22c11', 'L8Fi8>(2N_xi');
     $mabd->query('SET NAMES utf8;');
     $req = 'SELECT * FROM  guide WHERE guide_id = ' . $num;
     $resultat = $mabd->query($req);
@@ -25,7 +25,7 @@
     nationnalité:
     <select name="nation">
     	<?php
-			$mabd = new PDO('mysql:host=localhost;dbname=sae203base;charset=UTF8;', 'root', 'root');
+			$mabd = new PDO('mysql:host=localhost;dbname=sae203base;charset=UTF8;', 'mmi22c11', 'L8Fi8>(2N_xi');
             $mabd->query('SET NAMES utf8;');
             $req = "SELECT * FROM  nation ";
             $resultat = $mabd->query($req);

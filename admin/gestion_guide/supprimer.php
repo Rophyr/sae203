@@ -8,7 +8,7 @@
 <?php
 $bd_id=$_GET['num'];
 
-$mabd = new PDO('mysql:host=localhost;dbname=sae203base;charset=UTF8;', 'root', 'root');
+$mabd = new PDO('mysql:host=localhost;dbname=sae203base;charset=UTF8;', 'mmi22c11', 'L8Fi8>(2N_xi');
 $mabd->query('SET NAMES utf8;');
 
 $req = 'DELETE FROM guide WHERE guide_id='.$bd_id; 
