@@ -9,9 +9,35 @@
 <h1>Gestion des destinations</h1>
 <p>Ajouter une destination</p>
 <hr>
-<form method="POST" action="table1_modif_valide.php" enctype="multipart/form-data">
-    <input type="hidden" name="num"  value="<?php echo $destinations['dest_id']; ?>">
-    Ville:<input type="text" name="ville" value="<?php echo $destinations['dest_nom'] ?>" ><br>
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $ville = $_POST['ville'];
+    $pays = $_POST['pays'];
+    $budget = $_POST['budget'];
+    $note = $_POST['note'];
+    $horaire = $_POST['horaire'];
+    
+    $mabd = new PDO('mysql:host=localhost;dbname=sae203base;charset=UTF8;', 'mmi22c11', 'L8Fi8>(2N_xi');
+    $mabd->query('SET NAMES utf8;');
+
+    $req = $mabd->prepare('INSERT INTO destinations(dest_nom, dest_pays, dest_budget, dest_note, dest_fus_horaire) 
+                           VALUES(:ville, :pays, :budget, :note, :horaire)');
+    $req->execute(array(
+        'ville' => $ville,
+        'pays' => $pays,
+        'budget' => $budget,
+        'note' => $note,
+        'horaire' => $horaire
+    ));
+    
+    // Redirect to a confirmation page
+    header('Location: destination_created.php');
+    exit;
+}
+?>
+
+<form method="POST" action="">
+    Ville:<input type="text" name="ville"><br>
     Pays:
     <select name="pays">
     	<?php
@@ -21,21 +47,16 @@
             $resultat = $mabd->query($req);
     
             foreach ($resultat as $value) {
-
-                $selection="";
-                if($nation == $value['nation_nom']) $selection="selected";          
-                echo '<option '.$selection . ' value="' .  $value['nation_id'] . '"> ' .  $value['nation_nom'] . '</option>';
-        }
+                echo '<option value="' .  $value['nation_nom'] . '"> ' .  $value['nation_nom'] . '</option>';
+            }
          ?>
     </select>
     <br>
-    Budget:<input type="text" name="budget" value="<?php echo $destinations['dest_budget'] ?>" ><br>
-    Note:<input type="text" name="note" value="<?php echo $destinations['dest_note'] ?>" ><br>
-    Fuseau horaire:<input type="text" name="horaire" value="<?php echo $destinations['dest_fus_hor'] ?>" ><br>
-    photo:<input type="file" name="photo" /><br />
+    Budget:<input type="text" name="budget"><br>
+    Note:<input type="text" name="note"><br>
+    Fuseau horaire:<input type="text" name="horaire"><br>
     <input type="submit" name="ajouter">
 </form>
 
-</form>
 </body>
 </html>
