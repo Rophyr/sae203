@@ -29,6 +29,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         'budget' => $budget,
         'note' => $note,
         'horaire' => $horaire
+        'date' => $date,
     ));
     
     // Redirect to a confirmation page
