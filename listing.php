@@ -21,7 +21,7 @@ $resultat = $mabd->query($req);
 ?>
 
 <section class="first">
-<div class="container" style="display: flex; flex-direction: row; align-items: center; flex-wrap: wrap; border: 2px solid transparent; text-align: center; justify-content: center; margin-top: 40px;">
+<div class="container_guide" style="display: flex; flex-direction: row; align-items: center; flex-wrap: wrap; border: 2px solid transparent; text-align: center; justify-content: center; margin-top: 40px;">
     <?php foreach ($resultat as $value) : ?>
         <div class="container" style="display: flex; flex-direction: column; align-items: center; flex-wrap: wrap; margin: 20px;">
             <div class="image1">
