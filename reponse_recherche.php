@@ -1,9 +1,9 @@
 <?php
-    if ( (empty($_POST['region']))) {
+    if ( (empty($_POST['destinations']))) {
         header('Location: form_recherche.php');
     }
-$region = $_POST['region'];
-$region_nettoye =  filter_var( $region ,  FILTER_SANITIZE_SPECIAL_CHARS );
+$destinations = $_POST['destinations'];
+$dest_nettoye =  filter_var( $destinations ,  FILTER_SANITIZE_SPECIAL_CHARS );
 ?>
 
 <!DOCTYPE html>
@@ -28,7 +28,7 @@ $mabd = new PDO('mysql:host=localhost;dbname=sae203base;charset=UTF8;', 'mmi22c1
 $mabd->query('SET NAMES utf8;');
 
 
-if (isset($_POST['region'])) {
+if (isset($_POST['destinations'])) {
     
     $req = "SELECT * FROM destinations INNER JOIN guide ON destinations._guides_id = destinations.guides_id WHERE LOWER(dest_pays) LIKE LOWER('%" . $dest_nettoye . "%') OR LOWER(dest_nom) LIKE LOWER('%" . $dest_nettoye . "%')";
     $resultat = $mabd->query($req);
