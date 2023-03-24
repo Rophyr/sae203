@@ -27,6 +27,7 @@ if (isset($_FILES['photo']) && isset($_FILES['photo']['type'])) {
     // Check if the image is a valid type
     if (($imageType != "image/png") &&
         ($imageType != "image/jpg") &&
+        ($imageType != "image/webp") &&
         ($imageType != "image/jpeg")) {
         echo '<p>Désolé, le type d\'image n\'est pas reconnu !';
         echo 'Seuls les formats PNG et JPEG sont autorisés.</p>'."\n";
