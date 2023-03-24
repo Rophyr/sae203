@@ -18,8 +18,8 @@
     <div id="recherche">
         <form action="reponse_recherche.php" method="post">
             <p>
-                <label for="region">Recherche</label>
-                <input type="text" name="region" id="region">
+                <label for="destinations">Recherche</label>
+                <input type="text" name="destinations" id="destinations">
             </p>
             <p>
                 <input type="submit" value="Valider">

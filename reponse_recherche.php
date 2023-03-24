@@ -30,7 +30,7 @@ $mabd->query('SET NAMES utf8;');
 
 if (isset($_POST['destinations'])) {
     
-    $req = "SELECT * FROM destinations INNER JOIN guide ON destinations._guides_id = destinations.guides_id WHERE LOWER(dest_nom) LIKE LOWER('%" . $dest_nettoye . "%') OR LOWER(dest_nom) LIKE LOWER('%" . $dest_nettoye . "%')";
+    $req = "SELECT * FROM destinations INNER JOIN guide ON destinations._guides_id = destinations.guides_id WHERE LOWER(dest_pays) LIKE LOWER('%" . $dest_nettoye . "%') OR LOWER(dest_nom) LIKE LOWER('%" . $dest_nettoye . "%')";
     $resultat = $mabd->query($req);
     
     echo '<h1>Résultats pour ' . htmlspecialchars($dest_nettoye) . '</h1>';
