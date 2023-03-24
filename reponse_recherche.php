@@ -24,7 +24,7 @@ $region_nettoye =  filter_var( $region ,  FILTER_SANITIZE_SPECIAL_CHARS );
 <main>
 
 <?php
-$mabd = new PDO('mysql:host=localhost;dbname=sae203Base;charset=UTF8;', 'mmi22c11', 'L8Fi8>(2N_xi');
+$mabd = new PDO('mysql:host=localhost;dbname=sae203base;charset=UTF8;', 'mmi22c11', 'L8Fi8>(2N_xi');
 $mabd->query('SET NAMES utf8;');
 
 
