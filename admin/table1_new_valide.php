@@ -14,7 +14,7 @@
 <?php
 $ville=$_POST['ville'];
 $pays=$_POST['pays'];
-$age=$_POST['budget'];
+$budget=$_POST['budget'];
 $note=$_POST['note'];
 $horaire=$_POST['horaire'];
 
