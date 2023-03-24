@@ -22,7 +22,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $mabd->query('SET NAMES utf8;');
 
     $req = $mabd->prepare('INSERT INTO destinations(dest_nom, dest_pays, dest_budget, dest_note, dest_fus_hor, dest_date) 
-                           VALUES(:ville, :pays, :budget, :note, :horaire, :date)');
+                           VALUES(:ville, :pays, :budget, :note, :horaire, :"date")');
     $req->execute(array(
         'ville' => $ville,
         'pays' => $pays,
