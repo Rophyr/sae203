@@ -3,7 +3,7 @@
 <head><title></title></head>
 <body>
 <a href="table2_gestion.php">Retour</a> 	
-<hr> <h1>gestion des guides</h1> <hr>
+<hr> <h1>Gestion des guides</h1> <hr>
 
 <?php
 $bd_id=$_GET['num'];

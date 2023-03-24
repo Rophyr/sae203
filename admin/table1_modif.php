@@ -6,8 +6,8 @@
 <body>
 <a href="table1_gestion.php">Retour</a>
 	<hr>
-<h1>Gestion des guides</h1>
-<p>Modification d'un guide</p>
+<h1>Gestion des Destinations</h1>
+<p>Modification d'une destination</p>
 <?php
 	$num = $_GET['num'];
     $mabd = new PDO('mysql:host=localhost;dbname=sae203base;charset=UTF8;', 'mmi22c11', 'L8Fi8>(2N_xi');

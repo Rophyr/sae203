@@ -3,7 +3,7 @@
 <head><title></title></head>
 <body>
 <a href="table1_gestion.php">Retour</a>
-<hr> <h1>Gestion des guides</h1> <hr>
+<hr> <h1>Gestion des destinations</h1> <hr>
 
 <?php
 $bd_id=$_GET['num'];
@@ -17,7 +17,7 @@ echo $req;
 
 $resultat = $mabd->query($req);
 
-echo '<h2>vous venez de supprimer le guide n°'.$bd_id.' </h2>';
+echo '<h2>vous venez de supprimer la destination n°'.$bd_id.' </h2>';
 ?>
 
 </body>

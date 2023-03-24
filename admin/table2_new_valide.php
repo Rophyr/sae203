@@ -50,7 +50,6 @@ if (isset($_FILES['photo']) && isset($_FILES['photo']['type'])) {
     $nouvelleImage = "";
 }
 
-// Insert the new record into the database
 $req = 'INSERT INTO guide(guide_nom, guide_prenom, guide_age, guide_nation, guide_photo) 
         VALUES("'.$nom.'","'.$prenom.'", "'.$age.'", "'.$nation.'", "'.$nouvelleImage.'")';
 $resultat = $mabd->query($req);

@@ -6,8 +6,8 @@
 <body>
     <a href="table1_modif.php">Retour</a>
 	<hr>
-	<h1>gestion des guides</h1>
-	<p>Modification d'un guide reussi !</p>
+	<h1>gestion des destinations</h1>
+	<p>Modification d'une destinations reussi !</p>
 	<hr>
 
 	<?php
