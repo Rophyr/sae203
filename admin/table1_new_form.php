@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $mabd = new PDO('mysql:host=localhost;dbname=sae203base;charset=UTF8;', 'mmi22c11', 'L8Fi8>(2N_xi');
     $mabd->query('SET NAMES utf8;');
 
-    $req = $mabd->prepare('INSERT INTO destinations(dest_nom, dest_pays, dest_budget, dest_note, dest_fus_horaire) 
+    $req = $mabd->prepare('INSERT INTO destinations(dest_nom, dest_pays, dest_budget, dest_note, dest_fus_hor) 
                            VALUES(:ville, :pays, :budget, :note, :horaire)');
     $req->execute(array(
         'ville' => $ville,
