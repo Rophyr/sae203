@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     ));
     
     // Redirect to a confirmation page
-    header('Location: destination_created.php');
+    header('Location: table1_new_valide.php');
     exit;
 }
 ?>
