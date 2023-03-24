@@ -17,7 +17,7 @@ $nom=$_POST['nom'];
 $age=$_POST['age'];
 $nation=$_POST['nation'];
 
-$mabd = new PDO('mysql:host=localhost;dbname=sae203base;charset=UTF8;', 'mmi22c11', 'L8Fi8>(2N_xi');
+$mabd = new PDO('mysql:host=localhost;dbname=sae203base;charset=UTF8;', 'root', 'root');
 $mabd->query('SET NAMES utf8;');
 
 // Check if an image was uploaded
